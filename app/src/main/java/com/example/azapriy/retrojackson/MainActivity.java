@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
         service.currentCity("Milan").enqueue(new Callback<Weather>() {
             @Override
             public void onResponse(Call<Weather> call, Response<Weather> response) {
+                Weather weather = response.body();
+                Runnable r1 = () -> Log.e("Weather", "Lat: " + weather.getCoord().getLat());
+                Runnable r2 = () -> Log.e("Weather", "Lon: " + weather.getCoord().getLon());
+                r1.run();
+                r2.run();
                 Log.e("RESP", "SUCCESS");
             }
 
