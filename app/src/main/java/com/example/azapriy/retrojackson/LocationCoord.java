@@ -19,4 +19,8 @@ public class LocationCoord {
     public void setLon(Double _lon) {
         this._lon = _lon;
     }
+
+    public String toString() {
+        return "Lat: " + _lat + ", Lon: " + _lon;
+    }
 }

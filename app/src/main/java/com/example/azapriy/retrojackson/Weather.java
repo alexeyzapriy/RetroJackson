@@ -22,4 +22,8 @@ public class Weather {
     public void setCoord(LocationCoord _coord) {
         this._coord = _coord;
     }
+
+    public String toString(){
+        return _name + ": " + _coord.toString();
+    }
 }

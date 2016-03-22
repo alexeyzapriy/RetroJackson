@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RetroJackson</string>
+    <string name="connecting_">Connecting…</string>
 </resources>
